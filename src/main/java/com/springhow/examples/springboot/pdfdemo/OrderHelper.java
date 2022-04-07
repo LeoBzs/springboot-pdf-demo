@@ -14,10 +14,10 @@ public class OrderHelper {
         order.setOrderId(1234);
         order.setDate("2077-09-05");
         Address address = new Address();
-        address.setCity("New York");
-        address.setStreet("2897  Geneva Street");
-        address.setZipCode("10016");
-        address.setState("New York");
+        address.setCity("Porto Alegre");
+        address.setStreet("110 av. Ipiranga, Porto Alegre, RS - 91130-420");
+        address.setZipCode("90309-420");
+        address.setState("RS");
         Account account = new Account();
         account.setPhoneNumber("917-483-5146");
         account.setEmail("628jh4h624y@temporary-mail.net");
@@ -28,23 +28,23 @@ public class OrderHelper {
         List<Item> items = new ArrayList<>();
         order.setItems(items);
         Item item1 = new Item();
-        item1.setName("Blue T-Shirt");
-        item1.setPrice(BigDecimal.valueOf(9.99));
-        item1.setQuantity(2);
+        item1.setName("NodeJS");
+        item1.setPrice(BigDecimal.valueOf(5.0));
+        item1.setQuantity(5);
         item1.setSku("100034");
         items.add(item1);
         Item item2 = new Item();
-        item2.setName("Green SweatShirt");
-        item2.setPrice(BigDecimal.valueOf(12.49));
+        item2.setName("ReactJS");
+        item2.setPrice(BigDecimal.valueOf(4.5));
         item2.setSku("100075");
-        item2.setQuantity(3);
+        item2.setQuantity(4);
 
         items.add(item2);
         Item item3 = new Item();
-        item3.setName("Grey Sports Shoes");
-        item3.setPrice(BigDecimal.valueOf(14.49));
+        item3.setName("Java Spring");
+        item3.setPrice(BigDecimal.valueOf(3.0));
         item3.setSku("100022");
-        item3.setQuantity(1);
+        item3.setQuantity(2);
         items.add(item3);
 
         Payment payment = new Payment();
